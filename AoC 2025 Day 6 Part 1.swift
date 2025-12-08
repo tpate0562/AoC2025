@@ -12,7 +12,7 @@ var fileContent = readInputFile(at: inputFilePath)
 var cols = 1000, rows = 4, count = 0
 var array: [[Int]] = Array(repeating: Array(repeating: 0, count: cols), count: rows)
 var operations: [Substring] = []
-operations = "\*Dewhitespaced line 5 of the input goes here*/".split(separator: "")
+operations = "/*Dewhitespaced line 5 of the input goes here*/".split(separator: "")
 var rowsData = fileContent!.split(separator: "\n")
 for (i, rowData) in rowsData.enumerated() {
     let values = rowData.split(separator: " ").compactMap { Int($0) }
